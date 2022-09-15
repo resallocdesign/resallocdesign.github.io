@@ -21,7 +21,7 @@ function CompFadeSelect(props: ICompFadeSelectProps) {
   const PROGRAM_ALLOCATION = 30;
 
   const submitResult = () => nextState();
-  usePageTitle("Compassion Fade Study");
+  usePageTitle("Resource Allocation Design Study: Experiment 1");
   useEffect(() => {
     return () => {
       window.scrollTo(0, 0);

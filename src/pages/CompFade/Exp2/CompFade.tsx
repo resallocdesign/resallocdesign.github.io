@@ -24,7 +24,7 @@ type ConditionType =
   | "all";
 
 function CompFade({ nextState }: { nextState: () => void }) {
-  usePageTitle("Compassion Fade Study");
+  usePageTitle("Resource Allocation Design Study: Experiment 2");
 
   const PROGRAM_LABEL = { A: "Program Alpha", B: "Program Zefa" };
   const PRGORAM_STIMULI = { A: 3, B: 12 };

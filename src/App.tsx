@@ -22,7 +22,7 @@ function App() {
             <Route path="/exp1" component={CompFade1} />
             <Route path="/exp2" component={CompFade2} />
             <Route exact path="/exp3" component={CompFade3} />
-            <Redirect to="/404" />
+            <Redirect to="/" />
           </Switch>
         </BrowserRouter>
       </Suspense>

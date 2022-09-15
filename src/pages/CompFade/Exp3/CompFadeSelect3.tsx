@@ -22,7 +22,7 @@ export default function CompFadeSelect3(props: ICompFadeSelectProps) {
 	const PROGRAM_ALLOCATION = 246;
 
 	const submitResult = () => nextState();
-	usePageTitle("Compassion Fade Study");
+	usePageTitle("Resource Allocation Design Study: Experiment 3");
 	useEffect(() => {
 		return () => {
 			window.scrollTo(0, 0);
