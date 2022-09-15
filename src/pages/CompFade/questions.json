@@ -1,0 +1,34 @@
+{
+  "main": [
+    {
+      "question": "How familiar were you with the scenario that we have have provided here?",
+      "choices": [
+        "Not at all Familiar",
+        "Slightly Familiar",
+        "Somewhat Familiar",
+        "Moderately Familiar",
+        "Very Familiar"
+      ]
+    },
+    {
+      "question": "How familiar were you with the visualizations that we have have provided here?",
+      "choices": [
+        "Not at all Familiar",
+        "Slightly Familiar",
+        "Somewhat Familiar",
+        "Moderately Familiar",
+        "Very Familiar"
+      ]
+    },
+    {
+      "question": "How confident are you with the answer that you have provided?",
+      "choices": [
+        "Not at all Confident",
+        "Slightly Confident",
+        "Somewhat Confident",
+        "Moderately Confident",
+        "Very Confident"
+      ]
+    }
+  ]
+}
