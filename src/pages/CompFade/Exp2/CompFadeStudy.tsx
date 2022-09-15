@@ -37,7 +37,7 @@ export interface ICompFadeStudyResults {
 
 function CompFadeStudy() {
   usePageTitle("Resource Allocation Design Study: Experiment 2");
-  const [studyState, setStudyState] = useState(CFStudyState.Instructions);
+  const [studyState, setStudyState] = useState(CFStudyState.Task);
   const [results, setResults] = useState<ICompFadeStudyResults>({
     programBAlloc: -1,
     q1: "",

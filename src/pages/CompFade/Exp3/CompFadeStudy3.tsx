@@ -38,7 +38,7 @@ export interface ICompFadeStudyResults {
 
 function CompFadeStudy3() {
   usePageTitle("Resource Allocation Design Study: Experiment 3");
-  const [studyState, setStudyState] = useState(CFStudyState.Instructions);
+  const [studyState, setStudyState] = useState(CFStudyState.Task);
   const [results, setResults] = useState<ICompFadeStudyResults>({
     programBAlloc: -1,
     q1: "",
@@ -115,7 +115,6 @@ function CompFadeStudy3() {
     // if (process.env.NODE_ENV === "development") {
     //   setStudyState(CFStudyState.Instructions)
     // }
-    setStudyState(CFStudyState.Instructions)
   }, []);
 
   useEffect(() => {
