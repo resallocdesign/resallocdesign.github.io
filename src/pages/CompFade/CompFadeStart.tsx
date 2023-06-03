@@ -8,10 +8,10 @@ const exp1_2_cond = [
 { name: "(text, group)", "uri": "nc" }]
 const exp3_cond = [
   { name: "(textNone, visGroup)", uri: "nc"}, 
-  { name: "(textIndividual, visGroup)", uri: "np"}, 
+  { name: "(textIndividual, visGroup)", uri: "pc"}, 
   { name: "(textGroup, visNone)", uri: "cn"}, 
-  { name: "(textGroup, visGroup)", uri: "cp"}, 
-  { name: "(textGroup, visIndividual)", uri: "cc"}, 
+  { name: "(textGroup, visGroup)", uri: "cc"}, 
+  { name: "(textGroup, visIndividual)", uri: "cp"}, 
   { name: "(textIndividual, visNone)", uri: "pn"}, 
   { name: "(textIndividual, visGroup)", uri: "pc"}, 
   { name: "(textIndividual, visIndividual)", uri: "pp"}]
