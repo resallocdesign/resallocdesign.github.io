@@ -56,8 +56,9 @@ function CompFadeStart({ nextState }: { nextState: Function }) {
           <a className="text-blue-600 underline hover:text-blue-400" target="_blank" rel="noreferrer" href="http://dragice.fr/">Pierre Dragicevic</a>, {" "}
           <a className="text-blue-600 underline hover:text-blue-400" target="_blank" rel="noreferrer" href="http://fannychevalier.net/">Fanny Chevalier</a>
         </h4>
-        
+
         <h4 className="ml-4">Paper Link:  <a target="_blank" rel="noreferrer" href="https://doi.org/10.1145/3544548.3580739" className="text-blue-600 underline hover:text-blue-400">https://doi.org/10.1145/3544548.3580739</a></h4>
+        <h4 className="ml-4">OSF Link (with source and analysis code):  <a target="_blank" rel="noreferrer" href="https://osf.io/zrbej" className="text-blue-600 underline hover:text-blue-400">https://osf.io/zrbej</a></h4>
         <div className="mb-2 ml-4 ">
           Click on one of the conditions below to start an experiment!
         </div>
@@ -99,18 +100,18 @@ const ExpBlock: React.FC<{ exp: IExp; onClick: () => void; isSelected: boolean }
       </div>
 
     </div>
-    <h4 className="w-full px-8 py-4 font-semibold rounded-lg ">
-      Measure: <span>{exp.measure}</span>
+    <h4 className="w-full mt-2 ml-4 font-semibold rounded-lg">
+      Measure: <span className="font-normal">{exp.measure}</span>
     </h4>
-    <div className="mx-4 my-2">
-      <h3 className="text-lg font-bold"> Conditions:</h3>
-      <div className="flex flex-wrap ml-6 space-x-4">
-        {exp.title === "Experiment 3" && exp3_cond.map((c) => {
-          return <button className="px-2 py-1 mt-2 bg-gray-300 rounded-lg cursor-pointer hover:bg-yellow-400"
+    <div className="mx-4 mb-2">
+      <h3 className="font-bold text-md"> Conditions:</h3>
+      <div className="flex flex-wrap space-x-2 text-sm">
+        {exp.title === "Experiment 3" && exp3_cond.map((c, idx) => {
+          return <button className={"px-2 py-1 mt-2 bg-gray-300 rounded-lg cursor-pointer hover:bg-yellow-400" + (idx === 0 ? " ml-2" : "")}
             onClick={() => { history.push("/exp3?cond=" + c.uri); }}> {c.name} </button>
         })}
-        {exp.title !== "Experiment 3" && exp1_2_cond.map((c) => {
-          return <button className="px-2 py-1 mt-2 bg-gray-300 rounded-lg cursor-pointer hover:bg-yellow-400"
+        {exp.title !== "Experiment 3" && exp1_2_cond.map((c, idx) => {
+          return <button className={"px-2 py-1 mt-2 bg-gray-300 rounded-lg cursor-pointer hover:bg-yellow-400" + (idx === 0 ? " ml-2" : "")}
             onClick={() => {
               if (exp.title === "Experiment 1") history.push("/exp1?cond=" + c.uri);
               if (exp.title === "Experiment 2") history.push("/exp2?cond=" + c.uri);
